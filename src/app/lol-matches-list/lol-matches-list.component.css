@@ -6,17 +6,14 @@
     background-size: cover;
   }
  .card-body{
-   width:1200px;
-   
-   padding:0px;
+  padding:0px;
  }
  .card{
-   width:1200px;
    margin-top:50px;
    margin-left:15px;
    margin-right:0px;
    border:0px;
-   float:left;
+   
    
  }
  .view {
@@ -25,4 +22,9 @@
  .btn .fa {
    margin-left: 3px;
  }
+ table tr td, table tr th{
+  background-color: rgba(0,123,255) !important;
+  
+}
+
  
