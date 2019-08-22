@@ -1,0 +1,71 @@
+<div class="intro-header">
+<section class="view intro-2 rgba-gradient" style="overflow:auto;">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+  <div class="d-flex w-50 order-0">
+    <img class ="logo" src="../assets/img/logoImage.png" width="50px">
+    <img class ="logo" src="../assets/img/e-score.png" width="120px">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  </div>
+  <div class="navbar-collapse collapse justify-content-center order-2" style="width:800px;"id="collapsingNavbar">
+      <ul class="navbar-nav">
+          <li class="nav-item active">
+              <button type="button" routerLink="/"class="btn btn-primary"style="color:white" width="150px" height="20px"><img src="../assets/img/iconLol.jpg"width="20px">League Of Legends</button>
+          </li>
+          <li class="nav-item">
+              <button type="button" class="btn btn-primary"style="color:white" width="150px" height="20px"><img src="../assets/img/dota2Icon.png"width="20px">Dota2</button>
+          </li>
+          <li class="nav-item">
+              <button type="button" class="btn btn-primary"style="color:white" width="150px" height="20px"><img src="../assets/img/csgoIcon.jpg"width="20px">Counter Strike Global Offensive</button>
+
+          </li>
+      </ul>
+  </div>
+  <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last">
+    <button type="button" class="btn btn-dark" style="margin-right:15px;">View Teams</button>
+    <button type="button" class="btn btn-dark" style="margin-right:15px;">Register</button>
+    <button type="button" class="btn btn-dark">Log in</button>
+  </span>
+</nav>
+<div class="card">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Team</th>
+            <th scope="col">Team</th>
+            <th scope="col">Winner</th>
+            <th scope="col">Time</th>
+            <th scope="col">Status</th>
+            <th scope="col">League Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let match of matches">
+            <td>{{ match.opponentOneName }}</td>
+            <td>{{ match.opponentTwoName }}</td>
+            <td>{{ match.winner}}</td>
+            <td>{{ match.time }}</td>
+            <td>{{ match.status }}</td>
+            <td>{{ match.leagueName }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div style="width:650px;float:right;text-align:center;padding-top:300px;">
+      <p style="color:white;">League of Legends is a 3D, third-person multiplayer online battle arena
+         game.The game consists of three current running game modes: Summoner's Rift, Twisted Treeline, and Howling Abyss.
+         Another game mode, The Crystal Scar, has since been removed.[15] Players compete in matches, 
+         lasting anywhere from 20 to 60 minutes on average. In each game mode, teams work together to achieve a victory condition, 
+         typically destroying the core building (called the Nexus) in
+         the enemy team's base after bypassing a line of defensive structures called turrets, or towers.</p>
+  </div>
+  <div  style="float:right;width:650px;margin-top:100px;">
+    
+      <button type="button" class="btn btn-success" style="float:left;margin-left:20px;margin-right:40px;margin-right:150px;">View Finished Matches</button>
+      <button type="button" class="btn btn-success">View Tournaments</button>
+  </div>
+</section>
+</div>
