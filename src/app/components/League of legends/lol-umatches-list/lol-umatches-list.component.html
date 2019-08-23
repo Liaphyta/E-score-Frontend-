@@ -1,9 +1,9 @@
 <div class="intro-header">
     <section class="view intro-2 rgba-gradient" style="overflow:auto;">
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-md navbar-dark bg-warning">
       <div class="d-flex w-50 order-0">
         <img class ="logo" src="../assets/img/logoImage.png" width="50px" height="60px;">
-        <img class ="logo" src="../assets/img/e-score.png" width="120px">
+        <img class ="logo" src="../assets/img/e-scoreLogo.png" width="120px">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -11,14 +11,14 @@
       <div class="navbar-collapse collapse justify-content-center order-2" style="width:800px;"id="collapsingNavbar">
           <ul class="navbar-nav">
               <li class="nav-item active">
-                  <button type="button" routerLink="/"class="btn btn-primary"style="color:white; white-space:nowrap;text-align:center"
+                  <button type="button" routerLink="/"class="btn btn-warning"style="color:dark; white-space:nowrap;text-align:center"
                   ><img src="../assets/img/iconLol.jpg"width="20px">League Of Legends</button>
               </li>
               <li class="nav-item">
-                  <button type="button" class="btn btn-primary"style="color:white;white-space:nowrap;text-align:center"><img src="../assets/img/dota2Icon.png"width="20px">Dota2</button>
+                  <button type="button" class="btn btn-warning"style="color:dark;white-space:nowrap;text-align:center"><img src="../assets/img/dota2Icon.png"width="20px">Dota2</button>
               </li>
               <li class="nav-item">
-                  <button type="button" class="btn btn-primary"style="color:white;white-space:nowrap;text-align:center"><img src="../assets/img/csgoIcon.jpg"width="20px">Counter Strike Global Offensive</button>
+                  <button type="button" class="btn btn-warning"style="color:dark;white-space:nowrap;text-align:center"><img src="../assets/img/csgoIcon.jpg"width="20px">Counter Strike Global Offensive</button>
     
               </li>
           </ul>
@@ -32,17 +32,18 @@
     <div class="container-fluid">
     <div class="row">
       <div class="col-8">
-        <div class="card">
+        <div class="card" >
           <div class="card-body">
-            <table style="margin-bottom:0px;"class="table table-dark table-hover table-bordered table-striped">
-              <thead class="thead-dark">
+            <div class=table-wrapper>
+            <table class="table table-dark table-hover table-bordered table-striped table-fixed">
+              <thead class="thead thead-dark">
               <tr>
-                <th scope="col">Team</th>
-                <th scope="col">Team</th>
-                <th scope="col">Winner</th>
-                <th scope="col">Time</th>
-                <th scope="col">Status</th>
-                <th scope="col">League Name</th>
+                <th style="position: sticky; top: -1px;text-align:center;" scope="col">Red Side</th>
+                <th style="position: sticky; top: -1px;text-align:center;" scope="col">Blue Side</th>
+                <th style="position: sticky; top: -1px;text-align:center;" scope="col">Winner</th>
+                <th style="position: sticky; top: -1px;text-align:center;" scope="col">Time</th>
+                <th style="position: sticky; top: -1px;text-align:center;" scope="col">Status</th>
+                <th style="position: sticky; top: -1px;text-align:center;" scope="col">League Name</th>
               </tr>
             </thead>
             <tbody class="tbody-dark">
@@ -59,6 +60,7 @@
         </div>
       </div>
     </div>
+  </div>
     <div class="col-4">
       <div style="float:right;text-align:center;padding-top:200px;">
           <p style="color:white;">League of Legends is a 3D, third-person multiplayer online battle arena
@@ -69,8 +71,8 @@
              the enemy team's base after bypassing a line of defensive structures called turrets, or towers.</p>
       </div>
       <div style="float:left;margin-top:50px;margin-left:20px;">
-          <button type="button" class="btn btn-success" style="float:left;margin-right:40px;">View Finished Matches</button>
-          <button type="button" class="btn btn-success">View Tournaments</button>
+          <button type="button" routerLink="/lolPmatches"class="btn btn-warning" style="float:left;margin-right:40px;">View Finished Matches</button>
+          <button type="button" routerLink="/lolTournaments"class="btn btn-warning">View Tournaments</button>
       </div>
     </div>
     </div>
