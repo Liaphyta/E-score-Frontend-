@@ -13,6 +13,9 @@ import { LolTournamentListComponent } from './components/League of legends/lol-t
 import { Dota2PmatchesListComponent } from './components/Dota2/dota2-pmatches-list/dota2-pmatches-list.component';
 import { Dota2UMatchesListComponent } from './components/Dota2/dota2-umatches-list/dota2-umatches-list.component';
 import { Dota2TournamentListComponent } from './components/Dota2/dota2-tournament-list/dota2-tournament-list.component';
+import { CsgoPmatchesListComponent } from './components/Csgo/csgo-pmatches-list/csgo-pmatches-list.component';
+import { CsgoUmatchesListComponent } from './components/Csgo/csgo-umatches-list/csgo-umatches-list.component';
+import { CsgoTournamentListComponent } from './components/Csgo/csgo-tournament-list/csgo-tournament-list.component';
 
 
 @NgModule({
@@ -25,6 +28,9 @@ import { Dota2TournamentListComponent } from './components/Dota2/dota2-tournamen
     Dota2PmatchesListComponent,
     Dota2UMatchesListComponent,
     Dota2TournamentListComponent,
+    CsgoPmatchesListComponent,
+    CsgoUmatchesListComponent,
+    CsgoTournamentListComponent,
   ],
   imports: [
     BrowserModule,

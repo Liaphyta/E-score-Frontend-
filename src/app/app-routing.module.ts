@@ -7,6 +7,9 @@ import { LolTournamentListComponent } from './components/League of legends/lol-t
 import { Dota2UMatchesListComponent } from './components/Dota2/dota2-umatches-list/dota2-umatches-list.component';
 import { Dota2PmatchesListComponent } from './components/Dota2/dota2-pmatches-list/dota2-pmatches-list.component';
 import { Dota2TournamentListComponent } from './components/Dota2/dota2-tournament-list/dota2-tournament-list.component';
+import { CsgoUmatchesListComponent } from './components/Csgo/csgo-umatches-list/csgo-umatches-list.component';
+import { CsgoPmatchesListComponent } from './components/Csgo/csgo-pmatches-list/csgo-pmatches-list.component';
+import { CsgoTournamentListComponent } from './components/Csgo/csgo-tournament-list/csgo-tournament-list.component';
 
 const routes: Routes = [
   { path: '' , component: HomepageComponent},
@@ -15,7 +18,10 @@ const routes: Routes = [
   { path: 'lolTournaments', component: LolTournamentListComponent},
   { path: 'dota2Umatches', component:Dota2UMatchesListComponent},
   { path: 'dota2Pmatches', component: Dota2PmatchesListComponent },
-  { path: 'dota2Tournaments', component: Dota2TournamentListComponent}
+  { path: 'dota2Tournaments', component: Dota2TournamentListComponent},
+  { path: 'csgoUmatches', component: CsgoUmatchesListComponent},
+  { path: 'csgoPmatches', component:CsgoPmatchesListComponent},
+  { path: 'csgoTournaments', component:CsgoTournamentListComponent}
 
   
 ];
