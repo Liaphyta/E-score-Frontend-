@@ -16,6 +16,8 @@ import { Dota2TournamentListComponent } from './components/Dota2/dota2-tournamen
 import { CsgoPmatchesListComponent } from './components/Csgo/csgo-pmatches-list/csgo-pmatches-list.component';
 import { CsgoUmatchesListComponent } from './components/Csgo/csgo-umatches-list/csgo-umatches-list.component';
 import { CsgoTournamentListComponent } from './components/Csgo/csgo-tournament-list/csgo-tournament-list.component';
+import { TeamsListComponent } from './components/Others/teams-list/teams-list.component';
+import { NavbarComponent } from './components/Others/navbar/navbar.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { CsgoTournamentListComponent } from './components/Csgo/csgo-tournament-l
     CsgoPmatchesListComponent,
     CsgoUmatchesListComponent,
     CsgoTournamentListComponent,
+    TeamsListComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

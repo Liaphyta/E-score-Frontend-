@@ -10,6 +10,7 @@ import { Dota2TournamentListComponent } from './components/Dota2/dota2-tournamen
 import { CsgoUmatchesListComponent } from './components/Csgo/csgo-umatches-list/csgo-umatches-list.component';
 import { CsgoPmatchesListComponent } from './components/Csgo/csgo-pmatches-list/csgo-pmatches-list.component';
 import { CsgoTournamentListComponent } from './components/Csgo/csgo-tournament-list/csgo-tournament-list.component';
+import { TeamsListComponent } from './components/Others/teams-list/teams-list.component';
 
 const routes: Routes = [
   { path: '' , component: HomepageComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'dota2Tournaments', component: Dota2TournamentListComponent},
   { path: 'csgoUmatches', component: CsgoUmatchesListComponent},
   { path: 'csgoPmatches', component:CsgoPmatchesListComponent},
-  { path: 'csgoTournaments', component:CsgoTournamentListComponent}
+  { path: 'csgoTournaments', component:CsgoTournamentListComponent},
+  { path: 'teams', component:TeamsListComponent}
 
   
 ];

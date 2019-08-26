@@ -1,0 +1,21 @@
+<div class="intro-header">
+    <section class="view intro-2 rgba-gradient" style="overflow:auto;">
+    <app-navbar></app-navbar>
+    <div class="container-fluid" style="color:white;">
+            <div class="row"style="padding-top:150px;">
+                
+                    <div *ngFor="let team of teams; "class="form-group col-4 offset-4"style="text-align:center;color:yellow;">
+                            
+                                <img src bind-src="team.imgSource" style="height:100px;width:100px;">
+                                <br>
+                                <label style="font-size:25px;"><b>{{ team.name }}</b></label>
+                                <p> {{team.description }}</p>
+                                <span>Founded since: {{ team.foundedSince }}</span>
+                                <br>
+                                <a href="{{ team.urlTeam }}"style="color:yellow;"><b>Company Site</b></a>
+                            
+                        </div>
+                        </div>
+    </div>
+    </section>
+    </div>
