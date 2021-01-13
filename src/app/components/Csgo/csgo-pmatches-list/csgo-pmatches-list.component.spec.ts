@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { CsgoPmatchesListComponent } from './csgo-pmatches-list.component';
 
@@ -6,7 +6,7 @@ describe('CsgoPmatchesListComponent', () => {
   let component: CsgoPmatchesListComponent;
   let fixture: ComponentFixture<CsgoPmatchesListComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ CsgoPmatchesListComponent ]
     })
